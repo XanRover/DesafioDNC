@@ -40,7 +40,7 @@ function Presentation() {
   };
 
   return (
-    <section className={styles.title} id="presentation">
+    <section className={styles.Apresent} id="presentation">
       <div className={`${styles.about} container-fluid`}>
         <div className="container">
           <h1 style={{ textAlign: "left" }}>Olá, eu sou {text}</h1>

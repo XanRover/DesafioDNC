@@ -6,9 +6,9 @@ import styles from "./Cards.module.css";
 function Cards() {
   return (
     <section className="container-fluid">
-      <div className="row justify-content-center m-5">
+      <div className="row">
         {/* Primeiro Card */}
-        <div className="col-md-6 mb-4">
+        <div className="d-flex justify-content-center col-md-6 mb-4">
           {" "}
           {/* Para telas médias (>= 768px), ocupará metade da largura */}
           <Card className={styles.cards}>
@@ -38,7 +38,7 @@ function Cards() {
         </div>
 
         {/* Segundo Card */}
-        <div className="col-md-6 mb-4">
+        <div className="d-flex justify-content-center col-md-6 mb-4">
           {" "}
           {/* Para telas médias (>= 768px), ocupará metade da largura */}
           <Card className={styles.cards}>
@@ -68,7 +68,7 @@ function Cards() {
         </div>
 
         {/* Terceiro Card */}
-        <div className="col-md-6 mb-4">
+        <div className="d-flex justify-content-center col-md-6 mb-4">
           {" "}
           {/* Para telas médias (>= 768px), ocupará metade da largura */}
           <Card className={styles.cards}>
@@ -96,7 +96,7 @@ function Cards() {
         </div>
 
         {/* Quarto Card */}
-        <div className="col-md-6 mb-4">
+        <div className="d-flex justify-content-center col-md-6 mb-4">
           {" "}
           {/* Para telas médias (>= 768px), ocupará metade da largura */}
           <Card className={styles.cards}>
