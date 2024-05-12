@@ -1,0 +1,83 @@
+.timelineSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 54px;
+  position: relative;
+  top: -40px;
+}
+
+.text {
+  width: 270px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.timelineContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+  position: relative;
+}
+
+.date {
+  background-color: aliceblue;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  position: relative;
+  top: 50px;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 12%;
+  top: 80px;
+  height: 8px;
+  width: 76%;
+  background-color: rgb(255, 255, 255);
+  z-index: -1;
+}
+
+@media (max-width: 1000px) {
+  .timeline {
+    flex-direction: column; /* Altera para layout vertical */
+    align-items: center; /* Centraliza os itens na vertical */
+  }
+
+  .timelineLine {
+    position: static; /* Remove o posicionamento absoluto para a linha */
+    width: 2px; /* Altera a largura da linha de conexão */
+    height: 100%; /* Ocupa toda a altura da seção */
+    margin: 20px 0; /* Adiciona margem acima e abaixo da linha */
+    background-color: rgb(255, 255, 255); /* Cor da linha de conexão */
+    z-index: -1;
+  }
+}

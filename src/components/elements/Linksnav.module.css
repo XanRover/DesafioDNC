@@ -1,0 +1,16 @@
+.links {
+  gap: 60px;
+}
+
+.links a {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+}
+
+.links a:hover {
+  color: aqua;
+}

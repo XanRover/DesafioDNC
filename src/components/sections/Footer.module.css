@@ -1,0 +1,30 @@
+.icon {
+  margin-left: 5%;
+  align-items: center;
+  font-size: 50px;
+}
+
+.text h3,
+.text p {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .text h3,
+  .text p {
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+  }
+  .icon {
+    margin-left: 5%;
+    align-items: center;
+    font-size: 35px;
+  }
+}

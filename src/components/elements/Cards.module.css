@@ -1,0 +1,71 @@
+.cards {
+  width: 350px;
+  min-width: 300px; /* Impede que a largura do card seja menor que 300px */
+  height: 400px;
+  margin: 15px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #ccc;
+  border-radius: 25px 0 25px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: #0f1624;
+  color:#FFF;
+}
+
+@media (max-width: 990px) {
+  .cards {
+    width: 100%; /* Ocupa toda a largura disponível quando a tela é menor que 990px */
+    min-width: 300px; /* Mantém a largura mínima de 300px mesmo em telas menores */
+  }
+}
+
+.title {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  height: 60px; /* Ajuste conforme necessário */
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 20px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Exibir até 3 linhas de texto */
+  -webkit-box-orient: vertical;
+  height: auto; /* Permitir que o texto cresça */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.heightBut {
+  height: 50px;
+  text-align: left;
+}
+
+@media (max-width: 980px) {
+  .title {
+    font-size: 24px;
+    height: auto;
+  }
+  .cards {
+    width: 100%; /* Ocupa toda a largura disponível quando a tela é menor que 980px */
+    min-width: 280px; /* Remover a restrição mínima de largura */
+    margin: 15px 0; /* Adicionar margem vertical entre os cards */
+  }
+  .text {
+    font-size: 14px;
+    text-align: left;
+    line-height: 18px;
+    -webkit-line-clamp: 4; /* Exibir até 4 linhas de texto em telas menores */
+    height: auto;
+  }
+}

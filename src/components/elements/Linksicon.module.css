@@ -1,0 +1,16 @@
+.linksicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.linksicon svg{
+    color: white;
+}
+
+.linksicon svg:hover{
+    cursor: pointer;
+    color: aqua;
+}
